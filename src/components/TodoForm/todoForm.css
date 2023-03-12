@@ -1,0 +1,56 @@
+.todos-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.todos-input {
+    width: 350px;
+    font-size: 18px;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 2px solid #00471b;
+    outline: none;
+}
+
+.todos-input:focus {
+    outline: 1px solid #00471b;
+}
+
+.todos-button {
+    padding: 16px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background: #00471b;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+
+.todos-button:hover {
+    background: #22693d;
+}
+
+@media screen and (max-width: 768px) {
+    .todos-form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .todos-input {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .todos-button {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,12 @@
+.root {
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}

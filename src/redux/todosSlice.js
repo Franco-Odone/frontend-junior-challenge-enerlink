@@ -55,7 +55,7 @@ const todosSlice = createSlice({
       })
       .addCase(fetchTodos.rejected, (state, action) => {
         state.status = "rejected";
-        state.error = action.error.message;
+        state.error = action.error.message + " (read)";
       })
       .addCase(addTodo.pending, (state) => {
         state.status = "pending";
@@ -66,7 +66,7 @@ const todosSlice = createSlice({
       })
       .addCase(addTodo.rejected, (state, action) => {
         state.status = "rejected";
-        state.error = action.error.message;
+        state.error = action.error.message + " (create)";
       })
       .addCase(toggleTodo.pending, (state) => {
         state.status = "pending";
@@ -81,7 +81,7 @@ const todosSlice = createSlice({
       })
       .addCase(toggleTodo.rejected, (state, action) => {
         state.status = "rejected";
-        state.error = action.error.message + " (patch)";
+        state.error = action.error.message + " (update)";
       })
       .addCase(deleteTodo.pending, (state) => {
         state.status = "pending";
